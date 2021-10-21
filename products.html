@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Products</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+</head>
+<body>
+	 <div id="Products" class="container-products">
+    	<hr>
+        <h2 class="shopping-list">PRODUCTS</h2>
+        <hr>
+        
+        <img src="https://m.media-amazon.com/images/I/51HjSy7SwgL._AC_.jpg" alt="petCloth1" class="center" width="300" height="450">
+        <p style="text-align: center;"><b>FURRY CAPTAIN SHIRT</b></p>
+        <p style="text-align: center;">Available sizes: S, M, L</p>
+        <p style="text-align: center;">S = P800.00</p>
+        <p style="text-align: center;">M = P,1000.00</p>
+        <p style="text-align: center;">L = P1,500.00</p>
+        <hr>
+        <img src="https://m.media-amazon.com/images/I/61MVE3DeWqL._AC_SX466_.jpg" alt="petCloth2" class="center" width="300" height="450">
+        <p style="text-align:center;"><b>BEST FURRY SHIRT</b></p>
+        <p style="text-align: center;">Available sizes: XS, M</p>
+        <p style="text-align: center;">XS = P500.00</p>
+        <p style="text-align: center;">M = P800.00</p>
+        <hr>
+        <img src="https://m.media-amazon.com/images/I/71F4C-rh9SL._AC_SL1500_.jpg" alt="petCloth3" class="center" width="300" height="450">
+        <p style="text-align: center;"><b>TROPICAL FURRY SHIRT</b></p>
+        <p style="text-align: center;">Available sizes: S, L</p>
+        <p style="text-align: center;">S = P800.00</p>
+        <p style="text-align: center;">L = P1,500.00</p>
+        <table id="list"></table>
+<hr>
+
+<form class="container-cart">
+    <fieldset class="field">
+    	<div data-ng-app="" data-ng-init="quantity=1;price=5">
+        <legend class="shopping"><b>Shopping cart</b></legend>
+
+        <label class="item"><b>Item:</b> <input type="text" name="name"></label>
+        <button onclick="document.getElementById('myInput').value = ''">Clear input field</button>
+
+        <label class="item"><b>Size:</b> <input type="text" name="name"></label>
+        <button onclick="document.getElementById('myInput').value = ''">Clear input field</button>
+
+        <label class="price"><b>Price:</b> <input type="number" name="data" ng-model="quantity"></label>
+        <button onclick="document.getElementById('myInput').value = ''">Clear input field</button>
+
+        <label class="quantity"><b>Quantity:</b> <input type="number" name="data" ng-model="price"></label>
+        <button onclick="document.getElementById('myInput').value = ''">Clear input field</button>
+
+		<p class="total"><b>TOTAL=</b>P{{quantity * price}}</p>
+
+		</div>
+
+		<ul class="links-container">
+    	<li class="link-item"><a href="index.html"><b>Save</b></a></li>
+    	
+    	<li class="link-item"><a href="#"><b>Update</b></a></li>
+	</ul>
+
+    </fieldset>
+</form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</body>
+</html>
