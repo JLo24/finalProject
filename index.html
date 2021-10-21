@@ -7,14 +7,18 @@
 	<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 
 </head>
+	<h1 class="container-header" style="text-align: center;"><b>Welcome to Furry Clothes!</b></h1>
 <body>
+	
+
 	<form>
-		<div class="container">
+		<div class="container-registration">
+			<hr>
 			<h1 class="register"><b>REGISTRATION</b></h1>
 			<hr>
-			<p>Kindly fill this form.</p>
+			<p class="form">Kindly fill this form.</p>
 			<hr>
-
+			<div class="container-fill">
 			<label for= "first-name"><b>First Name:</b></label>
 			<input type="text" placeholder="Enter First Name" id="first-name" required autocomplete/>
 
@@ -29,38 +33,43 @@
 
     		<label for="psw-repeat"><b>Repeat Password</b></label>
     		<input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    		<button type="submit" class="registerbtn">Register</button> <p>Already have an account? <a href="#">Sign in</a>.</p>
+    	   </div>
     		<hr>
 
-			<button type="submit" class="registerbtn">Register</button>
-
 		</div>
 
-		<div class="container-signin">
-			<p>Already have an account? <a href="#">Sign in</a>.</p>
-		</div>
 	</form>
-
-    <hr>
-    <div id="items_table">
+    <div class="container-products">
+    	<hr>
         <h2 class="shopping-list">PRODUCTS</h2>
         <hr>
         
-        <p style="text-align: center;"><b>FURRY CAPTAIN SHIRT</b><img src="https://m.media-amazon.com/images/I/51HjSy7SwgL._AC_.jpg" alt="petCloth1" class="center" width="300" height="450"></p>
+        <img src="https://m.media-amazon.com/images/I/51HjSy7SwgL._AC_.jpg" alt="petCloth1" class="center" width="300" height="450">
+        <p style="text-align: center;"><b>FURRY CAPTAIN SHIRT</b></p>
         <hr>
-        <p style="text-align: center;"><b>BEST FURRY SHIRT</b><img src="https://m.media-amazon.com/images/I/61MVE3DeWqL._AC_SX466_.jpg" alt="petCloth2" class="center" width="300" height="450"></p>
+        <img src="https://m.media-amazon.com/images/I/61MVE3DeWqL._AC_SX466_.jpg" alt="petCloth2" class="center" width="300" height="450">
+        <p style="text-align:center;"><b>BEST FURRY SHIRT</b></p>
         <hr>
-        <p style="text-align: center;"><b>TROPICAL FURRY SHIRT</b><img src="https://m.media-amazon.com/images/I/71F4C-rh9SL._AC_SL1500_.jpg" alt="petCloth3" class="center" width="300" height="450"></p>
+        <img src="https://m.media-amazon.com/images/I/71F4C-rh9SL._AC_SL1500_.jpg" alt="petCloth3" class="center" width="300" height="450">
+        <p style="text-align: center;"><b>TROPICAL FURRY SHIRT</b></p>
         <table id="list"></table>
 
     </div>
 </form>
 <hr>
 
-<form name="ShoppingList">
+<form class="container-cart">
     <fieldset class="field">
+    	<div data-ng-app="" data-ng-init="quantity=1;price=5">
         <legend class="shopping"><b>Shopping cart</b></legend>
         <label class="item"><b>Item:</b> <input type="text" name="name"></label>
-        <label class="quantity"><b>Quantity:</b> <input type="text" name="data"></label>
+        <label class="price"><b>Price:</b> <input type="number" name="data" ng-model="quantity"></label>
+        <label class="quantity"><b>Quantity:</b> <input type="number" name="data" ng-model="price"></label>
+
+		<p class="total"><b>TOTAL=</b> P{{quantity * price}}</p>
+
+	</div>
 
         <input type="button" value="Save"   onclick="SaveItem()">
         <input type="button" value="Update" onclick="ModifyItem()">
@@ -70,6 +79,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </body>
 </html>

@@ -1,9 +1,19 @@
-* {
+*
+.container-header{
+  background-clip: padding-box;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: "Brush Script MT", monospace;
+  font-size: 80px;
+  background-color: #ABBAEA;
+}
+ {
   margin: 0;
   padding: 0;
   font-family: "Brush Script MT (cursive)", monospace;
 }
-
 
 body {
   background-color: white;
@@ -15,20 +25,26 @@ html {
 
 * {box-sizing: border-box}
 
-.container {
-  padding: 50px;
+.container-registration {
+  padding-top: 0px;
+  padding-left: 0px;
+  border-style: solid;
+  border-spacing: 50px 50px 50px 50px;
+  border-collapse: separate;
 }
 
 .register{
   font-size: 50px;
-}
-
-.container-signin{
   padding-left: 50px;
-  padding-bottom: 40px;
+  background-color: #ABBAEA; 
+  background-clip: padding-box;
 }
 
-input[type=text], input[type=password] {
+.form{
+  padding-left: 50px;
+}
+
+input[type=text], input[type=password], input[type=number] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -37,15 +53,17 @@ input[type=text], input[type=password] {
   background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=number]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
 
-
 hr {
   border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .field{
@@ -60,8 +78,8 @@ hr {
 }
 
 .shopping-list{
-  padding-left: 50px;
   font-size: 50px;
+  padding-left: 50px;
 }
 
 .center{
@@ -70,3 +88,23 @@ hr {
   margin-right: auto;
 }
 
+.total{
+  font-size: 25px;
+}
+
+.container-products{
+  padding-top: 0px;
+  padding-left: 0px;
+}
+
+.container-cart{
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+}
+
+.container-fill{
+  padding-left: 50px;
+  padding-right: 50px;
+}
