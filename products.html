@@ -7,6 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 </head>
 <body>
+
+	<div class="topnav">
+   	<a href="index.html">Home</a>
+  	<a href="portfolio.html">Portfolio</a>
+	</div>
+
+	<button type="submit"><a href="login.html">Logout</button></a>
+
 	 <div id="Products" class="container-products">
     	<hr>
         <h2 class="shopping-list">PRODUCTS</h2>
@@ -40,13 +48,16 @@
 
         <label class="item"><b>Item:</b> <input type="text" name="name"></label>
         <button onclick="document.getElementById('myInput').value = ''">Clear input field</button>
-
+        <br>
+        <br>
         <label class="item"><b>Size:</b> <input type="text" name="name"></label>
         <button onclick="document.getElementById('myInput').value = ''">Clear input field</button>
-
+        <br>
+        <br>
         <label class="price"><b>Price:</b> <input type="number" name="data" ng-model="quantity"></label>
         <button onclick="document.getElementById('myInput').value = ''">Clear input field</button>
-
+        <br>
+        <br>
         <label class="quantity"><b>Quantity:</b> <input type="number" name="data" ng-model="price"></label>
         <button onclick="document.getElementById('myInput').value = ''">Clear input field</button>
 
@@ -54,11 +65,9 @@
 
 		</div>
 
-		<ul class="links-container">
-    	<li class="link-item"><a href="index.html"><b>Save</b></a></li>
-    	
-    	<li class="link-item"><a href="#"><b>Update</b></a></li>
-	</ul>
+		<button type="submit"><a href="index.html">Checkout</button></a>
+		
+		<button class=”button”>Remove All<a href="index.html"></button></a>
 
     </fieldset>
 </form>
