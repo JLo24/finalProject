@@ -9,6 +9,8 @@
   font-size: 70px;
   background-color: #F08080;
   border-style: inset;
+  margin-right: 50px;
+  margin-left: 50px;
 }
  {
   margin: 0;
@@ -17,7 +19,12 @@
 }
 
 body {
-  background-color: GhostWhite;
+  background-color: #FFFAFA;
+  background-image: url(https://image.freepik.com/free-vector/abstract-hand-painted-background_23-2148416029.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 html {
@@ -29,6 +36,8 @@ html {
 .container-registration {
   padding-top: 0px;
   padding-left: 0px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .register{
@@ -62,11 +71,18 @@ input[type=text]:focus, input[type=number]:focus, input[type=password]:focus {
 }
 
 hr {
-  border: 1px solid #f1f1f1;
+  height: 10px;
   margin-bottom: 10px;
   margin-top: 20px;
-  margin-right: 50px;
+  margin-right: 3px;
+  margin-left: 3px;
+  display: block;
+  background-image:url(https://img.freepik.com/free-vector/watercolor-stone-rose-marble-with-gold-strokes_125540-463.jpg?size=626&ext=jpg);
+}
+
+.hr1{
   margin-left: 50px;
+  margin-right: 50px;
 }
 
 .field{
@@ -108,6 +124,13 @@ hr {
 .container-products{
   padding-top: 0px;
   padding-left: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.container-cart{
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .infoprod{
@@ -126,6 +149,8 @@ hr {
 .topnav {
   background-color: #333;
   overflow: hidden;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .topnav a {
@@ -255,6 +280,8 @@ span.psw {
   background-color: #F08080;
   border-style: inset;
   text-shadow: 3px 3px 3px #ababab;
+  margin-left: 50px;
+  margin-right: 50px;
 
 }
 
