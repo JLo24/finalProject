@@ -5,9 +5,9 @@
   padding-bottom: 20px;
   padding-left: 50px;
   padding-right: 50px;
-  font-family: "Brush Script MT", monospace;
-  font-size: 80px;
-  background-color: #ABBAEA;
+  font-family: "Sofia", sans-serif, monospace;
+  font-size: 70px;
+  background-color: #F08080;
   border-style: inset;
 }
  {
@@ -34,13 +34,17 @@ html {
 .register{
   font-size: 50px;
   padding-left: 50px;
-  background-color: #ABBAEA; 
+  background-color: #F08080; 
   background-clip: padding-box;
   border-style: inset;
+  font-family: "Sofia", sans-serif, monospace;
+
 }
 
 .form{
   padding-left: 50px;
+  font-family: Patrick Hand;
+  font-size: 25px;
 }
 
 input[type=text], input[type=password], input[type=number] {
@@ -74,13 +78,15 @@ hr {
 
 .shopping{
   font-size: 30px;
+  font-family: Patrick Hand;
 }
 
 .shopping-list{
   font-size: 50px;
   padding-left: 50px;
-  background-color: #ABBAEA;
+  background-color: #F08080;
   border-style: inset;
+  font-family: "Sofia", sans-serif, monospace;
 }
 
 .center{
@@ -91,6 +97,12 @@ hr {
 
 .total{
   font-size: 25px;
+  font-family: Patrick Hand;
+}
+
+.item{
+  font-family: Patrick Hand;
+  font-size: 25px;
 }
 
 .container-products{
@@ -98,9 +110,17 @@ hr {
   padding-left: 0px;
 }
 
+.infoprod{
+  font-size: 25px;
+  font-family: Patrick Hand;
+  line-height: 50%;
+}
+
 .container-fill{
   padding-left: 50px;
   padding-right: 50px;
+  font-family: Patrick Hand;
+  font-size: 20px;
 }
 
 .topnav {
@@ -240,6 +260,14 @@ span.psw {
 
 .abtme{
   font-size: 30px;
+  font-family: Pacifico;
+  color: black;
+
+}
+
+.container-infome {
+  padding-left: 750px;
+  padding-right: 600px;
 }
 
 * {box-sizing:border-box}
@@ -247,18 +275,26 @@ span.psw {
 .container {
   width: 100%; 
   background-color: #ddd;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .skills {
   text-align: right; 
   padding-top: 10px; 
   padding-bottom: 10px; 
-  color: white; 
+  color: black; 
+  font-family: Rampart one;
 }
 
 .html {width: 70%; background-color: #04AA6D;} 
-.css {width: 50%; background-color: #2196F3;} 
-.js {width: 45%; background-color: #f44336;} 
-.java {width: 20%; background-color: #808080;} 
+.css {width: 50%; background-color: #FF7F50;} 
+.js {width: 45%; background-color: #DB7093;} 
+.java {width: 20%; background-color: #DAA520;} 
 
+.prog{
+  font-family: Rampart one;
+  font-size: 35px;
+  padding-left: 50px;
+}
 
