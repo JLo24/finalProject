@@ -28,7 +28,7 @@
         <h2 class="shopping-list">PRODUCTS</h2>
         <hr>
 
-        <div class="imgContainer" style="float: left; margin-left: 100px; margin-right: 50px;">
+        <div class="imgContainer" id="shirts" style="float: left; margin-left: 100px; margin-right: 50px;">
         <img src="https://m.media-amazon.com/images/I/51HjSy7SwgL._AC_.jpg" alt="petCloth1" class="center" width="300" height="450">
         <p class="infoprod" style="text-align: center; font-size: 35px;"><b>FURRY CAPTAIN SHIRT</b></p>
         <p class="infoprod" style="text-align: center;">Available sizes: S, M, L</p>
@@ -39,7 +39,7 @@
 
         
 
-        <div class="imgContainer" style="float: left; margin-right: 50px; margin-left: 350px;">
+        <div class="imgContainer" id="shirts" style="float: left; margin-right: 50px; margin-left: 280px;">
         <img src="https://m.media-amazon.com/images/I/61MVE3DeWqL._AC_SX466_.jpg" alt="petCloth2" class="center" width="300" height="450">
         <p class="infoprod" style="text-align:center; font-size: 35px;"><b>BEST FURRY SHIRT</b></p>
         <p class="infoprod" style="text-align: center;">Available sizes: XS, M</p>
@@ -48,7 +48,7 @@
 		</div>
 
         
-        <div class="imgContainer" style="float: right; margin-right: 100px;">
+        <div class="imgContainer" id="shirts" style="float: right; margin-right: 100px;">
         <img src="https://m.media-amazon.com/images/I/71F4C-rh9SL._AC_SL1500_.jpg" alt="petCloth3" class="center" width="300" height="450">
         <p class="infoprod" style="text-align: center; font-size: 35px;"><b>TROPICAL FURRY SHIRT</b></p>
         <p class="infoprod" style="text-align: center;">Available sizes: S, L</p>
@@ -104,16 +104,16 @@
     	<div data-ng-app="" data-ng-init="quantity=1;price=5">
         <legend class="shopping" style="text-align: center;"><b>SHOPPING CART</b></legend>
 
-        <label class="item"><b>Item:</b> <input type="text" name="name"></label>
+        <label class="item" id="myInput"><b>Item:</b> <input type="text" name="name"></label>
         <br>
         <br>
-        <label class="item"><b>Size:</b> <input type="text" name="name"></label>
+        <label class="item" id="myInput"><b>Size:</b> <input type="text" name="name"></label>
         <br>
         <br>
-        <label class="item"><b>Price:</b> <input type="number" name="data" ng-model="quantity"></label>
+        <label class="item" id="myInput"><b>Price:</b> <input type="number" name="data" ng-model="quantity"></label>
         <br>
         <br>
-        <label class="item"><b>Quantity:</b> <input type="number" name="data" ng-model="price"></label>
+        <label class="item" id="myInput"><b>Quantity:</b> <input type="number" name="data" ng-model="price"></label>
 
 		<p class="total"><b>TOTAL=</b>PHP {{quantity * price}}</p>
 
@@ -121,11 +121,24 @@
 
 		<button type="submit"><a href="index.html">Checkout</button></a>
 		
-		<button class=”button”>Remove All<a href="index.html"></button></a>
+		<button class=”button” onclick="document.getElementById('myInput').value = ''">Remove All</button></a>
 
     </fieldset>
 </form>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+	var shirts = document.getElementById("shirts");
+	shirts.style.maxheight = "0px";
+	function shirtsToggle() {
+		if (shirts.style.maxheight == "0px")
+		{
+		shirts.style.maxheight == "200px";
+		}
+		else
+		{
+		shirts.style.maxheight = "0px";
+		}	
+	}
 </body>
 </html>

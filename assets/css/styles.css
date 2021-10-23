@@ -20,11 +20,10 @@
 
 body {
   background-color: #FFFAFA;
-  background-image: url(https://image.freepik.com/free-vector/abstract-hand-painted-background_23-2148416029.jpg);
-  background-position: center;
+  background-image: url(https://image.freepik.com/free-vector/diamond-shape-white-abstract-background_52683-56093.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 html {
@@ -324,4 +323,5 @@ span.psw {
   font-size: 35px;
   padding-left: 50px;
 }
+
 
