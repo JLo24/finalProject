@@ -37,6 +37,9 @@ html {
   padding-left: 0px;
   margin-right: 50px;
   margin-left: 50px;
+  background-repeat: no-repeat;
+  background-image: url(https://media.istockphoto.com/vectors/watercolors-paint-decorative-background-vector-id1224919999?k=20&m=1224919999&s=170667a&w=0&h=sZ8H2l_Ha6ZGFp6RS37uvGnA0JSCplGSL7nlapf1f8E=);
+  background-size: cover;
 }
 
 .register{
@@ -73,15 +76,10 @@ hr {
   height: 10px;
   margin-bottom: 10px;
   margin-top: 20px;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin-right: 50px;
+  margin-left: 50px;
   display: block;
   background-image:url(https://img.freepik.com/free-vector/watercolor-stone-rose-marble-with-gold-strokes_125540-463.jpg?size=626&ext=jpg);
-}
-
-.hr1{
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .field{
@@ -98,7 +96,8 @@ hr {
 
 .shopping-list{
   font-size: 50px;
-  padding-left: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
   background-color: #F08080;
   border-style: inset;
   font-family: "Sofia", sans-serif, monospace;
@@ -121,15 +120,18 @@ hr {
 }
 
 .container-products{
-  padding-top: 0px;
-  padding-left: 0px;
   margin-left: 50px;
   margin-right: 50px;
+  overflow: hidden;
+  transition: max-height 0.5s;
 }
 
 .container-cart{
   margin-left: 50px;
   margin-right: 50px;
+  background-image: url(https://data.whicdn.com/images/356700072/original.jpg?t=1625246125);
+  background-size: 1775px 615px;
+  background-repeat: no-repeat;
 }
 
 .infoprod{
@@ -284,6 +286,10 @@ span.psw {
 
 }
 
+ul{
+  list-style: none;
+}
+
 .abtme{
   font-size: 30px;
   font-family: Pacifico;
@@ -292,17 +298,19 @@ span.psw {
 }
 
 .container-infome {
-  padding-left: 750px;
-  padding-right: 600px;
+  text-align: center;
+  overflow: hidden;
+  transition: max-height 0.5s;
 }
 
 * {box-sizing:border-box}
 
 .container {
-  width: 100%; 
+  width: 95%; 
   background-color: #ddd;
   padding-left: 50px;
-  padding-right: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .skills {

@@ -15,18 +15,24 @@
 </head>
 <body>
 
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+
+				<span class="navbar-toggler-icon"></span>
+
+			</button>
+
 	<div class="topnav">
    	<a href="index.html">HOME</a>
   	<a href="portfolio.html">PORTFOLIO</a>
 	</div>
 	<br>
 	<button type="submit" style="float: right; margin-right: 50px;" ><a href="login.html">Logout</button></a>
+	<br>
 
+	<hr>
+	<h2 class="shopping-list">PRODUCTS</h2>
+	<hr>
 	 <div id="Products" class="container-products">
-	 	<br>
-    	<hr>
-        <h2 class="shopping-list">PRODUCTS</h2>
-        <hr>
 
         <div class="imgContainer" id="shirts" style="float: left; margin-left: 100px; margin-right: 50px;">
         <img src="https://m.media-amazon.com/images/I/51HjSy7SwgL._AC_.jpg" alt="petCloth1" class="center" width="300" height="450">
@@ -59,46 +65,8 @@
   </div>
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<hr class="hr1">
+<hr>
 <form class="container-cart">
     <fieldset class="field">
     	<div data-ng-app="" data-ng-init="quantity=1;price=5">
@@ -127,18 +95,21 @@
 </form>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
 <script>
-	var shirts = document.getElementById("shirts");
-	shirts.style.maxheight = "0px";
-	function shirtsToggle() {
-		if (shirts.style.maxheight == "0px")
+	var Products = document.getElementById("Products");
+	Products.style.maxheight = "0px";
+	function ProductsToggle() {
+		if (Products.style.maxheight == "0px")
 		{
-		shirts.style.maxheight == "200px";
+		Products.style.maxheight == "200px";
 		}
 		else
 		{
-		shirts.style.maxheight = "0px";
+		Products.style.maxheight = "0px";
 		}	
 	}
+</script>
+
 </body>
 </html>
